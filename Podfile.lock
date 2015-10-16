@@ -1,0 +1,17 @@
+PODS:
+  - PMUtils/Foundation+PMUtils (1.2.2)
+  - PMUtils/PMCircularCollectionView (1.2.2):
+    - PMUtils/PMProtocolInterceptor
+    - PMUtils/UIKit+PMUtils
+  - PMUtils/PMProtocolInterceptor (1.2.2)
+  - PMUtils/UIKit+PMUtils (1.2.2):
+    - PMUtils/Foundation+PMUtils
+    - PMUtils/PMProtocolInterceptor
+
+DEPENDENCIES:
+  - PMUtils/PMCircularCollectionView
+
+SPEC CHECKSUMS:
+  PMUtils: 07b7d5fa2c5547f4eb7c45a67d8c942da3dc240e
+
+COCOAPODS: 0.39.0

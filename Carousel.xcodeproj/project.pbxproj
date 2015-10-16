@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F6DCB623278376492C8061F /* libPods-Carousel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47715F9F5FC62A9977E77454 /* libPods-Carousel.a */; };
 		6A429A241BCE4BCC00DF1A9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A429A231BCE4BCC00DF1A9F /* AppDelegate.swift */; };
 		6A429A261BCE4BCC00DF1A9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A429A251BCE4BCC00DF1A9F /* ViewController.swift */; };
 		6A429A291BCE4BCC00DF1A9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A429A271BCE4BCC00DF1A9F /* Main.storyboard */; };
@@ -14,11 +15,15 @@
 		6A429A2E1BCE4BCC00DF1A9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A429A2C1BCE4BCC00DF1A9F /* LaunchScreen.storyboard */; };
 		6A429A361BCE4F2200DF1A9F /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A429A351BCE4F2200DF1A9F /* CustomCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		6A429A381BCE50DF00DF1A9F /* CarouselLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A429A371BCE50DF00DF1A9F /* CarouselLayout.swift */; settings = {ASSET_TAGS = (); }; };
+		6A6B4EBE1BD0E56300E153BA /* CircularCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6B4EBD1BD0E56300E153BA /* CircularCollectionView.swift */; settings = {ASSET_TAGS = (); }; };
+		6A6B4EC01BD0E59400E153BA /* CircularFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6B4EBF1BD0E59400E153BA /* CircularFlowLayout.swift */; settings = {ASSET_TAGS = (); }; };
 		6A80E6FE1BCFD4D6004ECE9E /* CarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A80E6FD1BCFD4D6004ECE9E /* CarouselFlowLayout.swift */; settings = {ASSET_TAGS = (); }; };
 		6A80E7001BCFF064004ECE9E /* CarouselCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A80E6FF1BCFF064004ECE9E /* CarouselCollectionView.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2180B44D8FDC1F1F65B21199 /* Pods-Carousel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carousel.release.xcconfig"; path = "Pods/Target Support Files/Pods-Carousel/Pods-Carousel.release.xcconfig"; sourceTree = "<group>"; };
+		47715F9F5FC62A9977E77454 /* libPods-Carousel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Carousel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A429A201BCE4BCC00DF1A9F /* Carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A429A231BCE4BCC00DF1A9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A429A251BCE4BCC00DF1A9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,8 +33,12 @@
 		6A429A2F1BCE4BCC00DF1A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A429A351BCE4F2200DF1A9F /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		6A429A371BCE50DF00DF1A9F /* CarouselLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselLayout.swift; sourceTree = "<group>"; };
+		6A6B4EBD1BD0E56300E153BA /* CircularCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularCollectionView.swift; sourceTree = "<group>"; };
+		6A6B4EBF1BD0E59400E153BA /* CircularFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularFlowLayout.swift; sourceTree = "<group>"; };
+		6A6B4EC11BD10C4F00E153BA /* Carousel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Carousel-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		6A80E6FD1BCFD4D6004ECE9E /* CarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselFlowLayout.swift; sourceTree = "<group>"; };
 		6A80E6FF1BCFF064004ECE9E /* CarouselCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCollectionView.swift; sourceTree = "<group>"; };
+		CDC85AF2E7C724CF1B5B9F50 /* Pods-Carousel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carousel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Carousel/Pods-Carousel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +46,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F6DCB623278376492C8061F /* libPods-Carousel.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		193EA52AD40D0C5F1239DBD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDC85AF2E7C724CF1B5B9F50 /* Pods-Carousel.debug.xcconfig */,
+				2180B44D8FDC1F1F65B21199 /* Pods-Carousel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6A429A171BCE4BCC00DF1A9F = {
 			isa = PBXGroup;
 			children = (
 				6A429A221BCE4BCC00DF1A9F /* Carousel */,
 				6A429A211BCE4BCC00DF1A9F /* Products */,
+				193EA52AD40D0C5F1239DBD3 /* Pods */,
+				788951348B8DE8F94FC13A21 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,18 +83,29 @@
 		6A429A221BCE4BCC00DF1A9F /* Carousel */ = {
 			isa = PBXGroup;
 			children = (
+				6A6B4EC11BD10C4F00E153BA /* Carousel-Bridging-Header.h */,
 				6A429A231BCE4BCC00DF1A9F /* AppDelegate.swift */,
 				6A429A251BCE4BCC00DF1A9F /* ViewController.swift */,
 				6A429A351BCE4F2200DF1A9F /* CustomCollectionViewCell.swift */,
 				6A429A371BCE50DF00DF1A9F /* CarouselLayout.swift */,
 				6A80E6FD1BCFD4D6004ECE9E /* CarouselFlowLayout.swift */,
 				6A80E6FF1BCFF064004ECE9E /* CarouselCollectionView.swift */,
+				6A6B4EBD1BD0E56300E153BA /* CircularCollectionView.swift */,
+				6A6B4EBF1BD0E59400E153BA /* CircularFlowLayout.swift */,
 				6A429A271BCE4BCC00DF1A9F /* Main.storyboard */,
 				6A429A2A1BCE4BCC00DF1A9F /* Assets.xcassets */,
 				6A429A2C1BCE4BCC00DF1A9F /* LaunchScreen.storyboard */,
 				6A429A2F1BCE4BCC00DF1A9F /* Info.plist */,
 			);
 			path = Carousel;
+			sourceTree = "<group>";
+		};
+		788951348B8DE8F94FC13A21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47715F9F5FC62A9977E77454 /* libPods-Carousel.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A429A321BCE4BCC00DF1A9F /* Build configuration list for PBXNativeTarget "Carousel" */;
 			buildPhases = (
+				748A81C6B3BD6D4610337F18 /* Check Pods Manifest.lock */,
 				6A429A1C1BCE4BCC00DF1A9F /* Sources */,
 				6A429A1D1BCE4BCC00DF1A9F /* Frameworks */,
 				6A429A1E1BCE4BCC00DF1A9F /* Resources */,
+				287BB19611320898F4513343 /* Embed Pods Frameworks */,
+				8BA05B5D16109FF345CB8F86 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -102,6 +137,7 @@
 		6A429A181BCE4BCC00DF1A9F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Deepak Kumar";
 				TargetAttributes = {
@@ -141,6 +177,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		287BB19611320898F4513343 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Carousel/Pods-Carousel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		748A81C6B3BD6D4610337F18 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8BA05B5D16109FF345CB8F86 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Carousel/Pods-Carousel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6A429A1C1BCE4BCC00DF1A9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -151,6 +235,8 @@
 				6A429A361BCE4F2200DF1A9F /* CustomCollectionViewCell.swift in Sources */,
 				6A80E6FE1BCFD4D6004ECE9E /* CarouselFlowLayout.swift in Sources */,
 				6A429A241BCE4BCC00DF1A9F /* AppDelegate.swift in Sources */,
+				6A6B4EBE1BD0E56300E153BA /* CircularCollectionView.swift in Sources */,
+				6A6B4EC01BD0E59400E153BA /* CircularFlowLayout.swift in Sources */,
 				6A429A381BCE50DF00DF1A9F /* CarouselLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,23 +348,30 @@
 		};
 		6A429A331BCE4BCC00DF1A9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDC85AF2E7C724CF1B5B9F50 /* Pods-Carousel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Carousel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.accedo.tv.deepak.Carousel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Carousel-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		6A429A341BCE4BCC00DF1A9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2180B44D8FDC1F1F65B21199 /* Pods-Carousel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Carousel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.accedo.tv.deepak.Carousel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Carousel-Bridging-Header.h";
 			};
 			name = Release;
 		};

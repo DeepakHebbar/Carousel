@@ -17,9 +17,27 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout {
     var totalObjects: Int?
     override func viewDidLoad() {
         super.viewDidLoad()
-        dataCollectionView.showsHorizontalScrollIndicator = true
-        dataCollectionView.pagingEnabled = true
         
+        dataCollectionView.showsHorizontalScrollIndicator = false
+        dataCollectionView.pagingEnabled = false
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: (view.frame.width), height: 320)
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 0
+        layout.scrollDirection = .Horizontal
+        dataCollectionView.collectionViewLayout = layout
+        
+//        let layout = PMCenteredCollectionViewFlowLayout()
+//        layout.itemSize = CGSize(width: view.frame.width, height: 320)
+//        layout.scrollDirection = .Horizontal
+//        layout.minimumLineSpacing = 10
+//        layout.minimumInteritemSpacing = 50
+//        dataCollectionView.collectionViewLayout = layout
+        
+//        dataCollectionView = PMCenteredCircularCollectionView(frame: view.frame, collectionViewLayout: layout)
+//        dataCollectionView.showsHorizontalScrollIndicator = false
+//        dataCollectionView.pagingEnabled = false
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -36,7 +54,7 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout {
         data.insert(lastItem!, atIndex: 0)
         data.append(firstItem!)
         
-        totalObjects = data.count
+        totalObjects = stockImages.count * 3
         
         return totalObjects!
     }
@@ -45,12 +63,12 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! CustomCollectionViewCell
         
         cell.imageView.image = self.stockImages[indexPath.item % self.stockImages.count]
-        cell.textLabel.text = "Image \(indexPath.row)"
+        cell.textLabel.text = ""//"Image \(indexPath.row)"
         
         return cell
     }
     
-    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+  /*  func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         
         let multiplier = ((dataCollectionView?.frame.size.width)!/8) * 8
         
@@ -103,7 +121,7 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout {
      
         
         
-    }
+    }*/
 
 
 }
