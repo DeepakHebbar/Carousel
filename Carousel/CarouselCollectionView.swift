@@ -32,8 +32,12 @@ class CarouselCollectionView: UICollectionView {
         
         
         
-        if (distanceFromCenter > ((contentWidth / 3) * 2)) {
+        if (contentOffset.x > ((contentWidth / 3) * 2)) {
             self.contentOffset = CGPoint(x: centerOffsetX, y: currentOffset.y)            
+        }
+        
+        if (contentOffset.x <= 0) {
+            self.contentOffset = CGPoint(x: (contentWidth / 3) * 2, y: 0)
         }
     }
     

@@ -28,6 +28,9 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout {
         layout.scrollDirection = .Horizontal
         dataCollectionView.collectionViewLayout = layout
         
+        let offset = view.frame.width * CGFloat(stockImages.count)
+        dataCollectionView.contentOffset = CGPoint(x: offset, y: 0)
+        
 //        let layout = PMCenteredCollectionViewFlowLayout()
 //        layout.itemSize = CGSize(width: view.frame.width, height: 320)
 //        layout.scrollDirection = .Horizontal
