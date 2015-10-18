@@ -17,7 +17,7 @@ class UltimateCollectionView: UICollectionView {
         let itemOffset = self.frame.width * (13/90)
         let numItems = self.dataSource?.collectionView(self, numberOfItemsInSection: 0)
         
-        print("itemHeight: \(itemHeight) itemWidth: \(itemWidth) itemOffset: \(itemOffset) numItems: \(numItems)")
+       // print("itemHeight: \(itemHeight) itemWidth: \(itemWidth) itemOffset: \(itemOffset) numItems: \(numItems)")
         
         let xOffset = (itemWidth * CGFloat(numItems! - 2)) - itemOffset
 

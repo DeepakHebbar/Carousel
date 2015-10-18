@@ -78,6 +78,13 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout {
         return cell
     }
     
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        if dataCollectionView.contentOffset.x > 0 && dataCollectionView.contentOffset.x < view.frame.width * (13/90) {
+            print("Deepak")
+            dataCollectionView.contentOffset = CGPointZero
+        }
+    }
+    
   /*  func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         
         /*var offset = dataCollectionView.contentOffset

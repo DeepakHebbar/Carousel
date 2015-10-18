@@ -78,7 +78,7 @@ class UltimateFlowLayout: UICollectionViewFlowLayout {
         previousOffset = updatedOffset
         
         return CGPoint(x: updatedOffset, y: proposedContentOffset.y)*/
-        
+        print("proposedContentOffset proposedContentOffset: \(proposedContentOffset)")
         
         var offSetAdjustment: CGFloat = CGFloat(MAXFLOAT)
         let horizontalCenter: CGFloat = proposedContentOffset.x + ((collectionView?.frame.width)! / 2)
@@ -97,7 +97,6 @@ class UltimateFlowLayout: UICollectionViewFlowLayout {
                 if (abs(itemHorizontalCenter - horizontalCenter) < abs(offSetAdjustment)) {
                     currentAttributes = attr
                     offSetAdjustment = itemHorizontalCenter - horizontalCenter
-                    
                 }
             }
         }
