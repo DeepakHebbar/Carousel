@@ -32,7 +32,7 @@ class UltimateFlowLayout: UICollectionViewFlowLayout {
         
         print("collectionView?.frame.width)!: \(collectionView?.frame.width)!)")
         
-        itemSize = CGSize(width: itemWidth * 2, height: itemHeight)
+        itemSize = CGSize(width: itemWidth, height: itemHeight)
         minimumInteritemSpacing = 0
         minimumLineSpacing = 0
         
@@ -142,8 +142,9 @@ class UltimateFlowLayout: UICollectionViewFlowLayout {
     }
     
     override func collectionViewContentSize() -> CGSize {
-        print("size: \(super.collectionViewContentSize())")
-        return super.collectionViewContentSize()
+        var size = super.collectionViewContentSize()
+        size.width = CGFloat(numberOfItems) * itemWidth
+        return size
     }
     
     override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {

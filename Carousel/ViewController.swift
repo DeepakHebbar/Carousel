@@ -20,7 +20,7 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout {
         
         dataCollectionView.showsHorizontalScrollIndicator = false
         dataCollectionView.pagingEnabled = false
-        dataCollectionView.backgroundColor = UIColor.whiteColor()
+        dataCollectionView.backgroundColor = .whiteColor()
         
         let layout = UltimateFlowLayout()
         layout.scrollDirection = .Horizontal
@@ -72,15 +72,12 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout {
 //        cell.textLabel.text = ""//"Image \(indexPath.row)"
         
         cell.imageView.image = images[indexPath.row]
-        cell.textLabel.text = ""//"Image \(indexPath.row)"
+        cell.textLabel.text = "Image \(indexPath.row)"
         
         return cell
     }
     
   /*  func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        
-        let multiplier = ((dataCollectionView?.frame.size.width)!/8) * 8
-        
         
         /*var offset = dataCollectionView.contentOffset
         let width = dataCollectionView.bounds.width
@@ -92,6 +89,7 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout {
         
         let offset = dataCollectionView.contentOffset.x
         let width = dataCollectionView.bounds.width
+        let itemWidth = dataCollectionView.frame.width * (32/45)
         
         let idx = floor (offset/width + 0.5)
         let index = idx % CGFloat(totalObjects!)
@@ -113,7 +111,7 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout {
         
         
         
-        let contentOffsetWhenFullyScrolledRight = ((multiplier) * (CGFloat(totalObjects!) - 1))
+        let contentOffsetWhenFullyScrolledRight = ((itemWidth) * (CGFloat(totalObjects!) - 2))
         
         print(contentOffsetWhenFullyScrolledRight)
         print(dataCollectionView.contentOffset.x)
