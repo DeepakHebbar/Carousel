@@ -30,8 +30,6 @@ class UltimateFlowLayout: UICollectionViewFlowLayout {
         itemWidth = (collectionView?.frame.width)! * (32/45)
         itemOffset = (collectionView?.frame.width)! * (13/90)
         
-        print("collectionView?.frame.width)!: \(collectionView?.frame.width)!)")
-        
         itemSize = CGSize(width: itemWidth, height: itemHeight)
         minimumInteritemSpacing = 0
         minimumLineSpacing = 0
@@ -137,6 +135,13 @@ class UltimateFlowLayout: UICollectionViewFlowLayout {
         
         proposedContentOffset.y = 0
         
+        print("proposedContentOffset: \(proposedContentOffset)")
+        
+        let xOffset = (itemWidth * CGFloat(numberOfItems - 2)) - itemOffset
+        
+        if proposedContentOffset.x > xOffset {
+          // proposedContentOffset.x = 0
+        }
         
         return proposedContentOffset
     }

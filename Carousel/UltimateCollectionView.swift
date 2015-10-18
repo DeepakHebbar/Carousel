@@ -31,7 +31,7 @@ class UltimateCollectionView: UICollectionView {
         
         if (contentOffset.x > xOffset) {
             print("resetting to zero")
-            self.contentOffset = CGPoint(x: 0, y: 0)
+            self.contentOffset = CGPointZero
         }
     }
     
