@@ -25,12 +25,10 @@ class UltimateCollectionView: UICollectionView {
         print("contentOffset.x: \(contentOffset.x)")
         
         if (contentOffset.x < 0) {
-            print("resetting to < zero")
             self.contentOffset = CGPoint(x: (itemOffset + (itemWidth * CGFloat(numItems! - 3))), y: 0)
         }
         
         if (contentOffset.x > xOffset) {
-            print("resetting to zero")
             self.contentOffset = CGPointZero
         }
     }
