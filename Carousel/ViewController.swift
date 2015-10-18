@@ -21,6 +21,7 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout {
         dataCollectionView.showsHorizontalScrollIndicator = false
         dataCollectionView.pagingEnabled = false
         dataCollectionView.backgroundColor = .whiteColor()
+        dataCollectionView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.width * CGFloat(2/5))
         
         let layout = UltimateFlowLayout()
         layout.scrollDirection = .Horizontal
