@@ -12,7 +12,7 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var dataCollectionView: UICollectionView!
     
-    let stockImages = [UIImage(named: "back"),UIImage(named: "balcony"),UIImage(named: "birds")]
+    let stockImages = [UIImage(named: "back"),UIImage(named: "balcony"),UIImage(named: "birds"),UIImage(named: "ceiling"),UIImage(named: "city"),UIImage(named: "cityscape")]
 
     var totalObjects: Int?
     override func viewDidLoad() {
@@ -20,16 +20,12 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout {
         
         dataCollectionView.showsHorizontalScrollIndicator = false
         dataCollectionView.pagingEnabled = false
+        dataCollectionView.backgroundColor = UIColor.whiteColor()
         
-        let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: (view.frame.width), height: 320)
-        layout.minimumInteritemSpacing = 0
-        layout.minimumLineSpacing = 0
+        let layout = UltimateFlowLayout()
         layout.scrollDirection = .Horizontal
         dataCollectionView.collectionViewLayout = layout
-        
-        let offset = view.frame.width * CGFloat(stockImages.count)
-        dataCollectionView.contentOffset = CGPoint(x: offset, y: 0)
+        //dataCollectionView.contentOffset = CGPoint(x: itemOffset, y: 0)
         
 //        let layout = PMCenteredCollectionViewFlowLayout()
 //        layout.itemSize = CGSize(width: view.frame.width, height: 320)
@@ -49,23 +45,33 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout {
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        var data = stockImages
+        
+        totalObjects = data().count
+        
+        return totalObjects!
+    }
+    
+    private func data() -> [UIImage?] {
+        var localData = stockImages
         
         let firstItem = stockImages.first
         let lastItem = stockImages.last
         
-        data.insert(lastItem!, atIndex: 0)
-        data.append(firstItem!)
-        
-        totalObjects = stockImages.count * 3
-        
-        return totalObjects!
+        localData.insert(lastItem!, atIndex: 0)
+        localData.append(firstItem!)
+        return localData
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! CustomCollectionViewCell
         
-        cell.imageView.image = self.stockImages[indexPath.item % self.stockImages.count]
+        let images = data()
+        
+        
+//        cell.imageView.image = self.stockImages[indexPath.item % self.stockImages.count]
+//        cell.textLabel.text = ""//"Image \(indexPath.row)"
+        
+        cell.imageView.image = images[indexPath.row]
         cell.textLabel.text = ""//"Image \(indexPath.row)"
         
         return cell

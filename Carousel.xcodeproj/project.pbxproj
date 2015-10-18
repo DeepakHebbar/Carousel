@@ -19,6 +19,8 @@
 		6A6B4EC01BD0E59400E153BA /* CircularFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6B4EBF1BD0E59400E153BA /* CircularFlowLayout.swift */; settings = {ASSET_TAGS = (); }; };
 		6A80E6FE1BCFD4D6004ECE9E /* CarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A80E6FD1BCFD4D6004ECE9E /* CarouselFlowLayout.swift */; settings = {ASSET_TAGS = (); }; };
 		6A80E7001BCFF064004ECE9E /* CarouselCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A80E6FF1BCFF064004ECE9E /* CarouselCollectionView.swift */; settings = {ASSET_TAGS = (); }; };
+		6AE306361BD39A3E00C2A8D3 /* UltimateCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE306351BD39A3E00C2A8D3 /* UltimateCollectionView.swift */; settings = {ASSET_TAGS = (); }; };
+		6AE306381BD39A5700C2A8D3 /* UltimateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE306371BD39A5700C2A8D3 /* UltimateFlowLayout.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		6A6B4EC11BD10C4F00E153BA /* Carousel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Carousel-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		6A80E6FD1BCFD4D6004ECE9E /* CarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselFlowLayout.swift; sourceTree = "<group>"; };
 		6A80E6FF1BCFF064004ECE9E /* CarouselCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselCollectionView.swift; sourceTree = "<group>"; };
+		6AE306351BD39A3E00C2A8D3 /* UltimateCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UltimateCollectionView.swift; sourceTree = "<group>"; };
+		6AE306371BD39A5700C2A8D3 /* UltimateFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UltimateFlowLayout.swift; sourceTree = "<group>"; };
 		CDC85AF2E7C724CF1B5B9F50 /* Pods-Carousel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carousel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Carousel/Pods-Carousel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +96,8 @@
 				6A80E6FF1BCFF064004ECE9E /* CarouselCollectionView.swift */,
 				6A6B4EBD1BD0E56300E153BA /* CircularCollectionView.swift */,
 				6A6B4EBF1BD0E59400E153BA /* CircularFlowLayout.swift */,
+				6AE306351BD39A3E00C2A8D3 /* UltimateCollectionView.swift */,
+				6AE306371BD39A5700C2A8D3 /* UltimateFlowLayout.swift */,
 				6A429A271BCE4BCC00DF1A9F /* Main.storyboard */,
 				6A429A2A1BCE4BCC00DF1A9F /* Assets.xcassets */,
 				6A429A2C1BCE4BCC00DF1A9F /* LaunchScreen.storyboard */,
@@ -230,12 +236,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AE306381BD39A5700C2A8D3 /* UltimateFlowLayout.swift in Sources */,
 				6A80E7001BCFF064004ECE9E /* CarouselCollectionView.swift in Sources */,
 				6A429A261BCE4BCC00DF1A9F /* ViewController.swift in Sources */,
 				6A429A361BCE4F2200DF1A9F /* CustomCollectionViewCell.swift in Sources */,
 				6A80E6FE1BCFD4D6004ECE9E /* CarouselFlowLayout.swift in Sources */,
 				6A429A241BCE4BCC00DF1A9F /* AppDelegate.swift in Sources */,
 				6A6B4EBE1BD0E56300E153BA /* CircularCollectionView.swift in Sources */,
+				6AE306361BD39A3E00C2A8D3 /* UltimateCollectionView.swift in Sources */,
 				6A6B4EC01BD0E59400E153BA /* CircularFlowLayout.swift in Sources */,
 				6A429A381BCE50DF00DF1A9F /* CarouselLayout.swift in Sources */,
 			);
